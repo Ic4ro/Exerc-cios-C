@@ -5,13 +5,13 @@
 int main() {
 	setlocale(LC_ALL, "portuguese");
 	
-	//Declarando Variáveis. 
+	//Declarando VariÃ¡veis. 
 	float primeiraNota, segundaNota, terceiraNota;
 	float soma, media;
 	char nome[200]; 
 	int idade;
 	
-	// Solicitando Dados Do Usuário.
+	// Solicitando Dados Do UsuÃ¡rio.
 	
 	printf("Digite Seu Nome: ");
 	scanf("%s",&nome);
@@ -29,19 +29,19 @@ int main() {
 	scanf("%f",&terceiraNota);
 	
 	
-	//Calculando Dados Do Usuário.
+	//Calculando Dados Do UsuÃ¡rio.
 	soma = primeiraNota + segundaNota + terceiraNota;
 	media = soma / 3;
 	
 	
-	//Exibindo Dados Para Usuário.
+	//Exibindo Dados Para UsuÃ¡rio.
 	system("cls || clear");
-	printf("=== Exibindo Dados Para Usuário ===\n");
+	printf("=== Exibindo Dados Para UsuÃ¡rio ===\n");
 	printf("Nome %s: \n", nome);
 	printf("Idade  %i: \n\n", idade);
 	printf("Primeira Nota %.1f: \n", primeiraNota);
 	printf("Segunda Nota %.1f: \n", segundaNota);
-	printf("Terceira Nota %.1f: \n", terceiraNota);
+	printf("Terceira Nota %.1f: \n\n", terceiraNota);
 	printf("Media %.1f: \n", media);
 	
 	if (media < 7){
