@@ -5,19 +5,19 @@
 int main(){ 
 	setlocale(LC_ALL,"");
 	
-	//Declarando Variáveis.
+	//Declarando VariÃ¡veis.
 	int primeiroNumero, segundoNumero, soma, produto; 
 	int maiorValor, menorValor;
 	float media;
 	
-	//Solicitando Dados Do Usuário.
-	printf("Digite o Primeiro Número: ");
+	//Solicitando Dados Do UsuÃ¡rio.
+	printf("Digite o Primeiro NÃºmero: ");
 	scanf("%i",&primeiroNumero);
 	
-	printf("Digite o Segundo Número: ");
+	printf("Digite o Segundo NÃºmero: ");
 	scanf("%i",&segundoNumero);
 	
-	//Calculando Dados Do Usuário.
+	//Calculando Dados Do UsuÃ¡rio.
 	soma = primeiroNumero + segundoNumero;
 	produto = primeiroNumero * segundoNumero;
 	media = soma / (float)  2;
@@ -30,24 +30,23 @@ int main(){
 		menorValor = primeiroNumero;
 	} 
 	
-	//Exbindo Dados Para Usuário.
+	//Exbindo Dados Para UsuÃ¡rio.
 	system("cls || clear");
-	printf("\n==== Exibindo Dados Para Usuário ====\n");
-	printf("Primeira Número: %.1i \n", primeiroNumero);
-	printf("Segundo Número: %.1i \n\n", segundoNumero);
+	printf("\n==== Exibindo Dados Para UsuÃ¡rio ====\n");
+	printf("Primeiro NÃºmero: %.1i \n", primeiroNumero);
+	printf("Segundo NÃºmero: %.1i \n\n", segundoNumero);
 	printf("Soma: %.1i \n", soma);
 	printf("Produto: %.1i \n", produto);
-	printf("Média: %.1f \n\n", media);
-	printf("Maior Valor: %.1i \n", maiorValor);
-	printf("Menor Valor: %.1i \n", menorValor);
+	printf("MÃ©dia: %.1f \n\n", media);
 	 
 	
 	if (primeiroNumero == segundoNumero) {
-	
-		printf("Os Números São Iguais!");
+		printf("Os NÃºmeros SÃ£o Iguais!");
 	} else {
-	
-		printf("Os Números Não São Iguais!");
+		printf("Maior Valor: %i \n", maiorValor);
+		printf("Menor Valor: %i \n", menorValor);
+		
 	}
+	
+	return 0;
 }
-
