@@ -4,21 +4,21 @@
 
 int main(){ 
 	setlocale(LC_ALL,"");
-	//Declarando Variáveis.
+	//Declarando VariÃ¡veis.
 	int numero, antecessor, sucessor;
 	
-	//Solicitando Dados Para O Usuáro.
-	printf("Digite um Número: ");
+	//Solicitando Dados Para O UsuÃ¡ro.
+	printf("Digite um NÃºmero: ");
 	scanf("%i",&numero);
 	
-	//Calculando Dados Do Usuário
+	//Calculando Dados Do UsuÃ¡rio
 	antecessor = numero - 1;
 	sucessor = numero + 1;
 	
-	//Exibindo Dados Para usuário.
+	//Exibindo Dados Para usuÃ¡rio.
 	system("cls || clear");
 	printf("\n=== Exibindo Resultados ===\n");
-	printf("Número: %i\n",numero);
+	printf("NÃºmero: %i\n",numero);
 	printf("Antecessor: %i\n",antecessor);
 	printf("Sucessor: %i\n",sucessor);
 	
