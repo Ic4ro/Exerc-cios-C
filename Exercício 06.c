@@ -5,19 +5,19 @@
 int main(){ 
 	setlocale(LC_ALL,"");
 	
-	//Declarando Variáveis
+	//Declarando VariÃ¡veis
 	float valor, desconto, valorFinal;
 	
-	//Solicitando Dados Para Usuário.
+	//Solicitando Dados Para UsuÃ¡rio.
 	printf("Digite um Valor: ");
 	scanf("%f",&valor);
 	
-	//Calculando Dados Para Usário.
+	//Calculando Dados Para UsÃ¡rio.
 	desconto = valor - (valor * 0.1);
 	valorFinal = valor - desconto;
 	
 	
-	//Exibindo Dados Para Usuário.
+	//Exibindo Dados Para UsuÃ¡rio.
 	system("cls || clear");
 	printf("\n=== Exibindo Resultados ===\n");
 	printf("Valor: %.2f \n",valor);
