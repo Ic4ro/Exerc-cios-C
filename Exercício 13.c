@@ -5,7 +5,7 @@
 int main(){ 
 	setlocale(LC_ALL,"");
 	
-	//Declarando Vari·veis.
+	//Declarando Vari√°veis.
 	char sexo;
 	float peso, altura;
 	
@@ -14,6 +14,8 @@ int main(){
 	
 	printf("Digite Sua Altura: ");
 	scanf("%f",&altura);
+
+	sexo = toupper(sexo); 
 	
 	system("cls || clear");
 	
@@ -21,12 +23,12 @@ int main(){
 		case 'M':
 			peso = (72.7 * altura) - 58;
 			printf("=== Exibindo Resultados ===\n");
-			printf("Peso Ideal È: %.2f \n", peso);
+			printf("Peso Ideal √©: %.2f \n", peso);
 			break;
 			
 		case 'F':
 			peso = (62.1 * altura) - 44.7;
-			printf("Peso Ideal È: %.2f \n",peso);
+			printf("Peso Ideal √©: %.2f \n",peso);
 			break;	
 		default:
 			printf("Sexo Indefinido");		
