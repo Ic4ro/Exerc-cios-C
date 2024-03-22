@@ -4,22 +4,22 @@
 
 int main(){ 
 	setlocale(LC_ALL,"");
-	//Declarando Variáveis.
+	//Declarando VariÃ¡veis.
 	float salario;
 	int salariosMinimos;
 	
-	//Solicitando Dados Para o Usuáro.
-	printf("Digite Seu Salário: ");
+	//Solicitando Dados Para o UsuÃ¡ro.
+	printf("Digite Seu SalÃ¡rio: ");
 	scanf("%f",&salario);
 	
-	//Calculando Dados Para o Usuário.	
+	//Calculando Dados Para o UsuÃ¡rio.	
 	salariosMinimos = salario / 1412.00;
 	
-	//Exibindo Dados Para o Usuário.
+	//Exibindo Dados Para o UsuÃ¡rio.
 	system("cls || clear");
 	printf("\n=== Exibindo Resultados ===\n");
-	printf("Salário: %3.f \n",salario);
-	printf("Salários Mínimos: %i \n",salariosMinimos);
+	printf("SalÃ¡rio: %3.f \n",salario);
+	printf("SalÃ¡rios MÃ­nimos: %i \n",salariosMinimos);
 	
 	return 0;
 
