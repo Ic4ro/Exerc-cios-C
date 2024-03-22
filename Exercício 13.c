@@ -15,7 +15,7 @@ int main(){
 	printf("Digite Sua Altura: ");
 	scanf("%f",&altura);
 
-	sexo = toupper(sexo); 
+	sexo = toupper(sexo); //Converte em Maiúsculo
 	
 	
 	switch (sexo) {
