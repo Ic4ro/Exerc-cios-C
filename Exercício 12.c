@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <string.h>
 
 int main(){ 
 	setlocale(LC_ALL,"");
 	
-	//Declarando Variáveis.
-	char nomeAluno[200];
+	//Declarando VariÃ¡veis.
+	char nomeAluno[200], resultado[200];
+	char conceito;
 	float primeiraNota, segundaNota, media;
 	
-	//Solicitando Dados do Usuário.
+	//Solicitando Dados do UsuÃ¡rio.
 	printf("Digite o Nome do Aluno: ");
 	scanf("%s",&nomeAluno);
 	
@@ -19,25 +21,42 @@ int main(){
 	printf("Digite a Segunda Nota do Aluno: ");
 	scanf("%f",&segundaNota);
 	
-	//Calculando Dados Do Usuário.
-	media = ( primeiraNota + segundaNota) / 2;
+	//Calculando Dados Do UsuÃ¡rio.
+	media = ( primeiraNota + segundaNota) / (float) 2;
 	
 	//Exibindo Resultados.
 	if(media >= 9) {
-		printf("Nota: A \nAprovado!");
+		conceito = 'A';
 	}
 	else if(media >= 7.5){
-		printf("Nota: B \nAprovado!");
+		conceito = 'B';
 	}
 	else if(media >= 6 && media <7.5){
-		printf("Nota: C \nAprovado!");
+		conceito = 'C';
 	}
 	else if(media >= 4 && media < 6){
-		printf("Nota: D \nReprovado!");
+		conceito = 'D';
 	}
 	else if(media < 4){
-		printf("Nota: F \nReprovado!");
+		conceito = 'E';
 	}
 	
+	if (conceito == 'A' || conceito == 'B' || conceito == 'C') {
+		strcpy(resultado, "Aprovado");
+	} else {
+		strcpy(resultado, "Reprovado");
+	}	
+	
+	system("cls || clear");
+	
+	printf("\n=== Exibindo Resultados ===\n");
+	printf("Nome: %s \n", nomeAluno);
+	printf("Primeira Nota: %.1f \n", primeiraNota);
+	printf("Segunda Nota: %.1f \n\n", segundaNota);
+	printf("MÃ©dia: %.1f \n", media);
+	printf("Conceito: %.1c \n", conceito);
+	printf("Resultado: %.1s \n", resultado);
+	
+	getchar();
 	return 0;
 	}
