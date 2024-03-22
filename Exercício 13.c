@@ -17,7 +17,6 @@ int main(){
 
 	sexo = toupper(sexo); 
 	
-	system("cls || clear");
 	
 	switch (sexo) {
 		case 'M':
