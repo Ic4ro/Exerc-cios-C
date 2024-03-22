@@ -6,32 +6,32 @@ int main() {
 	setlocale(LC_ALL, "portuguese");
 	
 	
-	// Declarando Variáveis.
+	// Declarando VariÃ¡veis.
 	float primeiroNumero, segundoNumero;
 	float soma, subtracao, multiplicacao, divisao;
 	
-	// Solicitando Dados Do Usuário.
-	printf("Digite o Primeiro Número: ");
+	// Solicitando Dados Do UsuÃ¡rio.
+	printf("Digite o Primeiro NÃºmero: ");
 	scanf("%f",&primeiroNumero);
 	
 	printf("Digite o Segundo Numero: ");
 	scanf("%f",&segundoNumero);
 	
-	//Calculando Dados Do Usuário.
+	//Calculando Dados Do UsuÃ¡rio.
 	soma = primeiroNumero + segundoNumero;
 	subtracao = primeiroNumero - segundoNumero;
 	multiplicacao = primeiroNumero * segundoNumero;
 	divisao = primeiroNumero / segundoNumero;
 	
-	//Exibindo Dados Para Usuário.
+	//Exibindo Dados Para UsuÃ¡rio.
 	system("cls || clear");
-	printf("=== Exibindo Dados Para Usuário ===\n");
-	printf("Primeiro Número: %f \n", primeiroNumero);
-	printf("Segundo Número: %f \n", segundoNumero);
+	printf("=== Exibindo Dados Para UsuÃ¡rio ===\n");
+	printf("Primeiro NÃºmero: %f \n", primeiroNumero);
+	printf("Segundo NÃºmero: %f \n", segundoNumero);
 	printf("Soma = %.1f \n", soma);
-	printf("Subutração = %.1f \n", subtracao);
-	printf("Multiplicação = %.1f \n", multiplicacao);
-	printf("Divisão = %.1f \n", divisao);
+	printf("SubutraÃ§Ã£o = %.1f \n", subtracao);
+	printf("MultiplicaÃ§Ã£o = %.1f \n", multiplicacao);
+	printf("DivisÃ£o = %.1f \n", divisao);
 	
 	return 0;
 	 
